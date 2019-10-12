@@ -1,24 +1,57 @@
-# README
+# Dependências
+1. Ruby
+2. Ruby On Rails
+3. Postgres
+4. Postgis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Instalação do Postgis
+1. Instale o Postgres 9.4 ou mais recente
 
-Things you may want to cover:
+`sudo apt-get install postgresql-9.5`
 
-* Ruby version
+2. Instale o GCC (provavelmente já está instalado)
 
-* System dependencies
+`sudo apt-get install gcc`
 
-* Configuration
+3. Instale Make (provavelmente já está instalado)
 
-* Database creation
+`sudo apt-get install make`
 
-* Database initialization
+4. Instale o Proj4
 
-* How to run the test suite
+`sudo apt-get install proj-bin`
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Instalae o GEOS
 
-* Deployment instructions
+`sudo apt-get install libgeos-dev`
 
-* ...
+6. Instalar LibXML2 (provavelmente já está instalado)
+
+`sudo apt-get install libxml2`
+
+7. Instale o JSON-C
+
+`sudo apt-get install libjson-c-dev`
+
+8. Instale o GDAL
+
+`sudo apt-get install gdal-bin`
+
+9. Instalar PostGIS
+
+`sudo apt-get install postgis`
+
+
+# dentro do projeto
+
+  `bundle install`
+
+  `rails db:create`
+
+  `rails db:migrate`
+
+  `rails db:seed`
+
+# pra subir o server:
+
+  `rails s`
